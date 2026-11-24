@@ -6,16 +6,12 @@
 //
 
 import SwiftUI
-import CoreData
 
 @main
-struct Photos_Album_RestoreApp: App {
-    let persistenceController = PersistenceController.shared
-
+struct Photos_Album_RestorerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
